@@ -1,18 +1,32 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+<template lang="pug">
+    .home
+      .home__converter-container
+        CurrencyConverter
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+const CurrencyConverter = () => import("@/components/CurrencyConverter");
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
-  },
+    CurrencyConverter
+  }
 };
 </script>
+
+<style lang="scss">
+  .home {
+    background: url("~@/assets/images/background.jpg");
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+    &__converter-container {
+    }
+  }
+</style>

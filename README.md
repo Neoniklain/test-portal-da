@@ -1,24 +1,18 @@
-# portal-da
+# portal-da-test
 
-## Project setup
-```
-npm install
-```
+## Сборка проекта
+1. Выполнить npm ci
+2. Запустить командой npm run serve
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Примечание
+На локальном ПК разрабатывал на node версии 14.17.1
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Суть
 
-### Lints and fixes files
-```
-npm run lint
-```
+https://www.figma.com/file/Ri0M6uSf38xJXNW4i8licc/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Portal-DA?node-id=0%3A1
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. Создать SPA на базе vue-cli — сделать вывод списка валют и конвертер
+2. Подключить PUG шаблоны
+3. Брать список валют с https://www.cbr-xml-daily.ru/daily_json.js
+4. Сделать верстка “по мотивам“, с учетом комментариев, в стиле portal-da. Верхние две страницы даны для примера дизайна, их верстать не нужно. Берем в работу страницы с конвертером.
+5. Можно использовать любые сторонние библиотеки
